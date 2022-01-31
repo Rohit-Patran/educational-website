@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@200;300&display=swap');
+:root{
+    --themeColor: #7d66b9;
+    --TextColor:#EEEADE;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family:'Dongle', sans-serif;
+
+}
+
+.navbar{
+    background-color: transparent;
+    width: 100%;
+    height: 2vw;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+    justify-content: space-around;
+    color: var(--TextColor);
+    align-items: center;
+    position: fixed;
+    font-size: 1.7vw;
+    margin: 0;
+}
+
+#contact{
+    color: var(--TextColor);
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+
+.nav-link{
+    color: var(--TextColor);
+    text-decoration: none;
+}
+
+.nav-contact{
+    background-color: #713fa3;
+    padding: 0.1vw;
+    border-radius: 2vw;
+    border: solid white 0.1vw;
+    width: 7vw;
+    text-align: center;
+}
+.bar{
+    width: 100%;
+    height: 0.4vh;
+    background-color: white;
+    border-radius: 0.5vw;
+}
+
+.scroll{
+    background-color: var(--TextColor);
+    color: #232b2b;
+}
+
+.nav-scroll{
+    background-color: #232b2b;
+}
+
+.hamburger-click{
+    background-color: #232b2b;
+}
+
+.nav-hover{
+    cursor: pointer;
+}
+.intro{
+    background-image: url(../images/sky/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vw;
+    background-color: rgb(245, 245, 245);
+    padding: 2vw;
+    width: 100%;
+    height: 60%;
+    border-radius: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 100%;
+    font-size: 1.5vw;
+    outline: none;
+    border: dodgerblue solid 0.1vw;
+    border-radius: 0.5vw;
+    font-family: 'Dongle', sans-serif;
+    font-size: 2vw;
+    height: 2.5vw;
+}
+button{
+    width: 50%;
+    outline: none;
+    border: dodgerblue solid 0.1vw;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-size: 2vw;
+    background-color: var(--themeColor);
+    color: var(--TextColor);
+}
+
+span{
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    text-decoration: underline;
+    color: var(--themeColor);
+    cursor: pointer;
+}
+.signup-text{
+    font-size: 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.intro-desc{
+    color: var(--TextColor);
+    font-size: 2vw;
+    width: 50%;
+}
+.desc{
+    margin-top: -2vw;
+}
+
+.courses{
+    background-image: url(../images/wave-course.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffb3bf;
+}
+
+.course-title{
+    color: var(--TextColor);
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 1vw;
+    padding: 1vw;
+}
+
+.course-item{
+    background-color: var(--TextColor);
+    width: 100%;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 0.5vw 0.5vw;
+}
+
+.course-item-title{
+    margin: 0.5vw;
+}
+
+.course-item-image{
+    width: 90%;
+    /* height: 100%; */
+    border-radius: 0.5vw;
+}
+
+.course-item-desc{
+    font-size: 1.5vw;
+    margin: 0 auto;
+}
+
+.view-more{
+    color: var(--themeColor);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+}
+
+.internships{
+    background-image: url(../images/wave-internship.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #713fa3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.internship-title
+{
+    color: #232b2b;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+.teachers{
+    background-color: #8a4f9f;
+}
+
+.teachers-title{
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+.teachers-content{
+    display: flex;
+    flex-direction:row ;
+    column-gap: 1vw;
+    padding: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teacher-member{
+    background-color: var(--TextColor);
+    width: 20%;
+    padding: 2vw;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+}
+
+.teacher-image{
+    width:100%;
+    border-radius: 1vw;
+}
+
+.teacher-desc{
+    font-size: 1.3vw;
+}
+.about-us{
+    background-image: url(./images/wave-course.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #232b2b;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb3bf;
+}
+
+.who-are-we{
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+.about-image{
+    width: 20%;
+    border-radius: 50%;
+    margin: 2vw;
+}
+
+.about-image-container{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-desc{
+    width: 30%;
+    font-size: 1.5vw;
+}
+.about-desc-title{
+    margin: 0;
+}
+.about-desc-content{
+    font-size: 1.5vw;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    font-size: 1.5vw;
+    background-color: #ffb3bf;
+    height: 100%;
+}
+
+.contact-title{
+    color: #232b2b;
+    margin: 0;
+}
+.contact-icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1vw;
+    align-items: center;
+}
+
+.contact-icon{
+    width: 5%;
+}
+
+.credits{
+    background-color: #ffb3bf;
+    text-align: center;
+}
+
+.credits-title{
+    margin: 0;
+    padding-top: 2vw;
+}
+
+.credits-desc{
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.credits-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 0.5vw;
+    justify-content: center;
+    margin: 0;
+}
+
+.credits-creator-link{
+    color: blue;
+}
+
+.nav-burger-icon{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    right: 5vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+
+@media screen and  (max-width:769px) and (min-width:427px){
+    .navbar{
+        font-size: 3vw;
+        padding-top: 2vh;
+        height: fit-content;
+    }
+
+    .nav-contact{
+        padding: 0 2vw;
+    }
+    .intro{
+        background-size: cover;
+        flex-direction: column;
+    }
+    .intro-title{
+        text-align: center;
+    }
+    .intro-desc{
+        font-size: 3vw;
+    }
+
+    form{
+        height: fit-content;
+        width: 30vw;
+        row-gap: 1vw;
+        padding-top: 5vw;
+    }
+
+    input{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+    button{
+        font-size: 3vw;
+
+    }
+
+    span{
+        font-size: 3vw;
+    }
+    .signup-text{
+        font-size: 3vw;
+    }
+
+    .courses{
+        height: fit-content;
+    }
+    .course-content{
+        flex-wrap: wrap;
+        row-gap: 1vw;
+    }
+    .course-title{
+        font-size: 5vw;
+    }
+    .course-item{
+        width: 45vw;
+    }
+
+    .course-item-desc{
+        font-size: 3vw;
+    }
+    .internships{
+        background-size: cover;
+        height: fit-content;
+    }
+
+    .internship-title{
+        font-size: 5vw;
+    }
+
+    .teachers-content{
+        row-gap: 1vw;
+    }
+    .teachers-title{
+        font-size: 5vw;
+    }
+    .teacher-member{
+        width: 40vw;
+        font-size: 2vw;
+    }
+
+    .teacher-desc{
+        font-size: 2.5vw;
+    }
+
+    .who-are-we{
+        font-size: 5vw;
+    }
+    .about-desc{
+        font-size: 2.5vw;
+    }
+    .about-desc-content{
+        font-size: 3vw;
+    }
+
+    .about-image{
+        width: 35%;
+    }
+
+    .about-desc{
+        width: 50%;
+    }
+
+    .contact-us{
+        font-size: 3vw;
+    }
+
+    .credits-desc{
+        font-size: 2.5vw;
+    }
+}
+
+
+@media screen  and (max-width:426px) {
+
+    .navbar{
+        height: fit-content;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav-burger-icon{
+        display: flex;
+        top: 2vh;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;text-align: center;
+        font-size: 5vw;
+        background-color: red;
+    }
+    .nav-link{
+        color: #232b2b;
+    }
+    .nav-links.active{
+        display: flex;
+        background-color: var(--TextColor);
+    }
+
+    .nav-contact{
+        position: absolute;
+        font-size: 4vw;
+        top: 1vh;
+        left: 2vw;
+        width: fit-content;
+        padding: 0 2vw;
+    }
+    .logo{
+        font-size: 7vw;
+    }
+    .intro{
+        background-size: cover;
+        flex-direction: column;
+    }
+    .intro-title{
+        text-align: center;
+    }
+    .intro-desc{
+        font-size: 5vw;
+        width: 80%;
+    }
+
+    form{
+        height: fit-content;
+        width: 60vw;
+        row-gap: 1vw;
+        padding-top: 5vw;
+        border-radius: 2vw;
+    }
+
+    input{
+        font-size: 5vw;
+        padding: 4vw;
+        border-radius: 2vw;
+    }
+    button{
+        font-size: 5vw;
+        border-radius: 2vw;
+    }
+
+    span{
+        font-size: 5vw;
+    }
+    .signup-text{
+        font-size: 5vw;
+    }
+
+    .courses{
+        height: fit-content;
+        background-size: cover;
+    }
+    .course-content{
+        flex-wrap: wrap;
+        row-gap: 1vw;
+    }
+    .course-title{
+        font-size: 10vw;
+    }
+    .course-item{
+        width: 90vw;
+        border-radius: 2vw;
+    }
+
+    .course-item-desc{
+        font-size: 5vw;
+    }
+    .internships{
+        background-size: cover;
+        height: fit-content;
+    }
+
+    .internship-title{
+        font-size: 10vw;
+    }
+
+    .view-more{
+        width: 90%;
+    }
+    .teachers-content{
+        row-gap: 1vw;
+    }
+    .teachers-title{
+        font-size: 10vw;
+    }
+    .teacher-member{
+        width: 85vw;
+        font-size: 2vw;
+    }
+
+    .teacher-desc{
+        font-size: 5vw;
+    }
+    .teacher-name{
+        font-size:10vw;
+        margin: 0;
+    }
+
+    .about-us{
+        background-size: cover;
+    }
+    .who-are-we{
+        font-size: 10vw;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
+    .about-desc{
+        font-size: 5vw;
+    }
+    .about-desc-content{
+        font-size: 5vw;
+    }
+
+    .about-desc{
+        width: 90%;
+    }
+
+    .about-image-container{
+        flex-direction: row;
+    }
+    .about-image{
+        width: 50%;
+    }
+
+    .contact-us{
+        font-size: 5vw;
+        padding-top:2vw;
+        background-size: cover;
+    }
+
+    .contact-icon{
+        width: 10vw;
+    }
+
+    .credits-desc{
+        font-size:4vw;
+    }
+
+    .credits-creator-link{
+        margin: 0 2vw;
+    }
+}
